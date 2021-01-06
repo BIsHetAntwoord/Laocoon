@@ -12,10 +12,12 @@ namespace laocoon {
         protected:
             void onMsg(Message*);
         public:
-            template <typename T>
-            Interceptor(T callback) : callback(callback) {}
-
             virtual ~Interceptor() = 0;
+
+            template <typename T>
+            void onCallback(T callback) {
+                this->callback = callback;
+            }
     };
 }
 #endif

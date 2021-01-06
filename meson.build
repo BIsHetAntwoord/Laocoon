@@ -9,6 +9,7 @@ project(
 )
 
 sources = [
+    'src/laocoon/tcp/tcpinterceptor.cpp',
     'src/laocoon/interceptor.cpp'
 ]
 
